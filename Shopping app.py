@@ -187,7 +187,7 @@ class Mall:
 def get_email():
     while True:
        U_email = input("Enter your email ")
-       if re.search("[a-zA-Z0-9]+@[a-zA-Z]+\.(com|net|edu)", U_email):
+       if re.search(r"^\w+@[a-zA-Z]+\.(com|net|edu)$", U_email):
            email = U_email
            return email 
        else: print("Invalid email!")
