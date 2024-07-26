@@ -192,4 +192,5 @@ def get_email():
            return email 
        else: print("Invalid email!")
 
+if __name__ == "__main__"
 main()                    
